@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Page</title>
 </head>
+
 <body>
   <header>
     <section class="contact"></section>
     <nav>
-      <h1>myRestaurant</h1>
-      <button>Home</button>
-      <button>Menu</button>
-      <button>Contact</button>
+      <div class="container">
+        <div class="logo-container">
+          <img src="./images/logo.png" class="logo" alt="">
+          <h1>animeats</h1>
+        </div>
+        <button>Home</button>
+        <button>Menu</button>
+        <button>Contact</button>
+        <button class="book-btn">Book a Table</button>
+      </div>
     </nav>
+  </header>
+
+  <main>
     <section class="main">
-      <img src="" alt="main page image">
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet velit nulla aspernatur possimus, cum consectetur repellendus ea perspiciatis magni laboriosam eius officiis mollitia, natus eveniet laborum, hic animi id?</p>
-      <button>Book a Table</button>
-      <button>Explore Menu</button>
+      <img src="./images/main-cropped.jpg" alt="main page image">
+      <div class="main-buttons">
+        <button>Book a Table</button>
+        <button>Explore Menu</button>
+      </div>
     </section>
     <section class="browse">
       <h1>Browse Our Menu</h1>
       <div class="container">
         <div class="card">
-          <h2>Breakfast</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
+          <h1 class="section-title">Breakfast</h1>
+          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
           <button>Explore Menu</button>
         </div>
         <div class="card">
-          <h2>Main Dishes</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
+          <h1 class="section-title">Main Dishes</h1>
+          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
           <button>Explore Menu</button>
         </div>
         <div class="card">
-          <h2>Drinks</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
+          <h1 class="section-title">Drinks</h1>
+          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
           <button>Explore Menu</button>
         </div>
         <div class="card">
-          <h2>Desserts</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
+          <h1 class="section-title">Desserts</h1>
+          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.</p>
           <button>Explore Menu</button>
         </div>
       </div>
     </section>
     <section class="about">
-      <img src="" alt="">
+      <img src="./images/anime-food.jpg" alt="Delicious ramen">
       <div>
-        <h1>We provide healthy food for your family.</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem quisquam magnam. Eligendi recusandae ducimus necessitatibus architecto aperiam veniam fugit ut obcaecati sapiente esse aliquam perspiciatis dolorem odit non enim nihil quam, a omnis inventore.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, officiis eaque unde a, atque assumenda nisi aliquid, eos nobis doloribus aut quo reiciendis ea nam?</p>
+        <h1 class="section-title">We provide healthy food for your family.</h1>
+        <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem quisquam magnam. Eligendi
+          recusandae ducimus necessitatibus architecto aperiam veniam fugit ut obcaecati sapiente esse aliquam
+          perspiciatis dolorem odit non enim nihil quam, a omnis inventore.</p>
+        <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, officiis eaque unde a, atque assumenda nisi
+          aliquid, eos nobis doloribus aut quo reiciendis ea nam?</p>
         <button>More About Us</button>
       </div>
     </section>
-  </header>
+    <footer>
+      <div class="footer-section">
+        <div class="logo-container">
+          <img src="./images/logo.png" alt="ramen logo" class="logo">
+          <h1>animeats</h1>
+        </div>
+        <div class="footer-text-container">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, quaerat.</p>
+        </div>
+      </div> 
+      <div class="footer-section">
+        <h1>Contact Us</h1>
+        <div class="footer-text-container">
+          <p>animeats - Paddington</p>
+          <p>yummy@animeats.com.au</p>
+          <p>(02) 1234 5678</p>
+        </div>
+      </div> 
+      <div class="footer-section">
+        <h1>Follow Us On Instagram</h1>
+        <div class="socials-img-container">
+          <img src="images/socials1.jpg" alt="">
+          <img src="images/socials2.jpg" alt="">
+          <img src="images/socials3.jpg" alt="">
+          <img src="images/anime-food.jpg" alt="">
+        </div>
+      </div>
+    </footer>
+  </main>
 </body>
+
 </html>
