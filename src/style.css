@@ -55,18 +55,14 @@ nav .container .book-btn {
   font-family: 'header';
 }
 
-main {
-  position: relative;
-}
-main img {
-  max-width: 100%;
-}
-
-.main-buttons{
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+.main {
+  background: url('/src/images/main-cropped.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .browse {
