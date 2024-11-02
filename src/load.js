@@ -1,5 +1,6 @@
-import { loadHome } from "./index";
-import { loadMenu } from "./menu";
+import { loadHome } from './index';
+import { loadMenu } from './menu';
+import { loadContact } from './contact';
 
 loadHome();
 
@@ -19,5 +20,5 @@ menuBtn.addEventListener('click', () => {
 
 contactBtn.addEventListener('click', () => {
   content.innerHTML = '';
-  console.log('this is contact page')
+  loadContact();
 })
