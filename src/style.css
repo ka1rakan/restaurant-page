@@ -31,17 +31,43 @@ nav {
 }
 
 nav .container {
-  width: 80%;
+  width: 90%;
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 
-nav .container h1 {
-  margin-right: auto;
+.nav-btn,
+.book-btn { 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+ }
+
+.nav-btn {
+  background-color: #555555;
+  border: none;
+  color: white;
 }
 
-nav .container .book-btn {
-  margin-left: auto;
+.book-btn {
+  border: 2px solid #555555;
+  background-color: whitesmoke;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.book-btn:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
 }
 
 .logo {
@@ -65,25 +91,68 @@ nav .container .book-btn {
   align-items: center;
 }
 
+.main-buttons button {
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+}
+
+.main-buttons button {
+  transition: 0.3s;
+}
+
+.main-buttons button:first-child {
+  background-color: #b91c1c;
+  color: #fafafa;
+}
+
+.main-buttons button:last-child {
+  background-color: whitesmoke; 
+}
+
+.main-buttons button:hover {
+  cursor: pointer;
+}
+
+.main-buttons button:first-child:hover {
+  background-color: #991b1b;
+}
+
+.main-buttons button:last-child:hover {
+  background-color: #e5e5e5;
+}
+
 .browse {
   padding: 5% 0;
   text-align: center;
 }
 
 .browse .container {
-  display: flex;
   padding: 5% 10%;
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
-.browse .container .card {
+.card {
   border: 1px solid black;
-  padding: 12px;
+  border-radius: 15px;
+  padding: 24px 18px;
+  min-width: 200px;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
+
+.card div {
+  text-align: left;
+}
+
 
 .card h2 {
   font-size: 24px;
@@ -94,15 +163,22 @@ nav .container .book-btn {
 }
 
 .card button {
-  color: #AD343E;
-  background-color: #FFFFFF;
+  margin: 15px 0px;
+  width: fit-content;
+  padding: 10px 24px;
+  color: #991b1b;
+  background-color: white;
   border: none;
   font-size: 16px;
   font-weight: bold;
+  border-radius: 15px;
+  transition: 0.4s;
 }
 
 .card button:hover {
   cursor: pointer;
+  color: white;
+  background-color: #991b1b;
 }
 
 .about {
@@ -121,6 +197,19 @@ nav .container .book-btn {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.about div button {
+  padding: 15px 32px;
+  border: none;
+  background-color: #b91c1c;
+  color: #F9F9F7;
+  transition: 0.4s;
+}
+
+.about div button:hover {
+  cursor: pointer;
+  background-color: #991b1b;
 }
 
 .about div h1 {
