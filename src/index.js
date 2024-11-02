@@ -20,7 +20,7 @@ content.appendChild(main);
 
 // BROWSE SECTION
 const browse = document.createElement('section');
-main.classList.add('browse');
+browse.classList.add('browse');
 content.appendChild(browse);
 (function() {
   const h1 = document.createElement('h1');
@@ -29,10 +29,26 @@ content.appendChild(browse);
   const container = document.createElement('div');
   container.classList.add('container');
   browse.append(container);
-  const card1 = document.createElement('div');
-  container.append(card1);
-  const card1Title = document.createElement('h1');
-  card1Title.classList.add('section-title');
-  card1Title.textContent = 'Breakfast';
-  card1.append(card1Title);
+  const addCard = (title) => {
+    const card = document.createElement('div');
+    container.append(card);
+    card.classList.add('card');
+    const cardTitle = document.createElement('h1');
+    cardTitle.classList.add('section-title');
+    cardTitle.textContent = title;
+    card.append(cardTitle);
+    const innerContainer = document.createElement('div')
+    card.append(innerContainer);
+    const sectionText = document.createElement('p');
+    sectionText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse.'
+    innerContainer.append(sectionText)
+    sectionText.classList.add('section-text');
+    const button = document.createElement('button');
+    card.append(button);
+    button.textContent = 'Explore Menu';
+  }
+  addCard('Breakfast');
+  addCard('Main Dishes');
+  addCard('Drinks');
+  addCard('Desserts');
 })();
