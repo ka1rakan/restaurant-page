@@ -21,7 +21,25 @@
 
 .contact {
   background-color: #474747;
-  height: 30px;
+  display: flex;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: whitesmoke;
+  padding: 12px 36px;
+}
+
+.contact .icons {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.contact .icons a {
+  color: whitesmoke;
 }
 
 nav {
