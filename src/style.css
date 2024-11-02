@@ -109,6 +109,11 @@ nav .container {
   align-items: center;
 }
 
+.main-buttons {
+  display: flex;
+  gap: 12px;
+}
+
 .main-buttons button {
   border: none;
   border-radius: 15px;
@@ -116,9 +121,6 @@ nav .container {
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
   -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
   -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
-}
-
-.main-buttons button {
   transition: 0.3s;
 }
 
