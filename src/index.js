@@ -1,4 +1,6 @@
+// eslint-disable-next-line
 import * as css from './style.css';
+import Ramen from './images/anime-food.jpg'
 
 const content = document.querySelector('#content');
 
@@ -51,4 +53,32 @@ content.appendChild(browse);
   addCard('Main Dishes');
   addCard('Drinks');
   addCard('Desserts');
+})();
+
+// ABOUT SECTION
+const about = document.createElement('section');
+content.append(about);
+about.classList.add('about');
+(function() {
+  const sideImg = document.createElement('img');
+  sideImg.src = Ramen;
+  sideImg.alt = 'Delicious ramen';
+  about.append(sideImg);
+  const container = document.createElement('div');
+  about.append(container);
+  const h1 = document.createElement('h1');
+  h1.classList.add('section-title');
+  h1.textContent = 'We provide healthy food for your family.';
+  container.append(h1);
+  const p1 = document.createElement('p');
+  p1.classList.add('section-text');
+  p1.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem quisquam magnam. Eligendi recusandae ducimus necessitatibus architecto aperiam veniam fugit ut obcaecati sapiente esse aliquam perspiciatis dolorem odit non enim nihil quam, a omnis inventore.'
+  container.append(p1);
+  const p2 = document.createElement('p');
+  p2.classList.add('section-text');
+  p2.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem quisquam magnam. Eligendi recusandae ducimus necessitatibus architecto aperiam veniam fugit ut obcaecati sapiente esse aliquam perspiciatis dolorem odit non enim nihil quam, a omnis inventore.'
+  container.append(p2);
+  const button = document.createElement('button');
+  button.textContent = 'More About Us';
+  container.append(button);
 })();
