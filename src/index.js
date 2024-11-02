@@ -1,6 +1,11 @@
 // eslint-disable-next-line
 import * as css from './style.css';
 import Ramen from './images/anime-food.jpg'
+import Logo from './images/logo.png'
+import socials1 from './images/socials1.jpg'
+import socials2 from './images/socials2.jpg'
+import socials3 from './images/socials3.jpg'
+import socials4 from './images/anime-food.jpg'
 
 const content = document.querySelector('#content');
 
@@ -82,3 +87,67 @@ about.classList.add('about');
   button.textContent = 'More About Us';
   container.append(button);
 })();
+
+// FOOTER
+const footer = document.createElement('footer');
+content.append(footer);
+(function () {
+  (function() {
+    const footerSection = document.createElement('div');
+    footerSection.classList.add('footer-section');
+    footer.append(footerSection);
+    const logoContainer = document.createElement('div');
+    logoContainer.classList.add('logo-container');
+    const img = document.createElement('img');
+    img.src = Logo;
+    img.alt = 'Ramen logo';
+    img.classList.add('logo');
+    const h1 = document.createElement('h1');
+    h1.textContent = 'animeats';
+    logoContainer.append(img, h1);
+    footerSection.append(logoContainer);
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('footer-text-container');
+    footerSection.append(textContainer);
+    const p = document.createElement('p');
+    p.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, quaerat.';
+    textContainer.append(p);
+  })();
+  (function () {
+    const footerSection = document.createElement('div');
+    footerSection.classList.add('footer-section');
+    footer.append(footerSection);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Contact Us';
+    footerSection.append(h1);
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('footer-text-container');
+    const p1 = document.createElement('p');
+    p1.textContent = 'animeats - Paddington';
+    const p2 = document.createElement('p');
+    p2.textContent = 'yummy@animeats.com.au';
+    const p3 = document.createElement('p');
+    p3.textContent = '(02) 1234 5678';
+    textContainer.append(p1, p2, p3);
+    footerSection.append(textContainer);
+  }) ();
+  (function () {
+    const footerSection = document.createElement('div');
+    footerSection.classList.add('footer-section');
+    footer.append(footerSection);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Follow Us On Instagram';
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('socials-img-container');
+    const img1 = document.createElement('img');
+    img1.src = socials1;
+    const img2 = document.createElement('img');
+    img2.src = socials2;
+    const img3 = document.createElement('img');
+    img3.src = socials3;
+    const img4 = document.createElement('img');
+    img4.src = socials4;
+    imgContainer.append(img1, img2, img3, img4);
+    footerSection.append(h1, imgContainer);
+  })()
+}())
